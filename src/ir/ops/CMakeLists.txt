@@ -29,4 +29,5 @@ target_sources(ir PRIVATE
     batch_to_space.cpp
     split.cpp
     gather.cpp
-    onehot.cpp)
+    onehot.cpp
+    lstm.cpp)

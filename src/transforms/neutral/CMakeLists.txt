@@ -32,4 +32,5 @@ target_sources(transforms PRIVATE
     split_to_slice.cpp
     fold_convert.cpp
     optimize_allocation.cpp
+    lstm_transform.cpp
     )
