@@ -35,36 +35,36 @@ def _make_module(i_channel, k_size, o_channel, stride, padding, padding_mode, di
 
 n = [
     1,
-    3
+    #3
 ]
 
 i_channels = [
     3,
-    16
+    #16
 ]
 
 i_sizes = [
     [12, 24],
-    [38, 65]
+    #[38, 65]
 ]
 
 k_sizes = [
     [1, 1],
-    [3, 3],
+    #[3, 3],
 ]
 
 o_channels = [
     1,
-    8
+    #8
 ]
 
 strides = [
-    (1, 1),
+    #(1, 1),
     (5, 5)
 ]
 
 paddings = [
-    1,
+    #1,
     (2, 3)
 ]
 
@@ -74,7 +74,7 @@ padding_modes = [
 
 dilations = [
     [1, 1],
-    [2, 2]
+    #[2, 2]
 ]
 
 
@@ -93,7 +93,7 @@ def test_conv2d(n, i_channel, i_size, k_size, o_channel, stride, padding, paddin
     in_shape = [n, i_channel]
     in_shape.extend(i_size)
 
-    runner = OnnxTestRunner(request.node.name, ['k510'])
+    runner = OnnxTestRunner(request.node.name, ['k210'])
     model_file = runner.from_torch(module, in_shape)
     runner.run(model_file)
 
