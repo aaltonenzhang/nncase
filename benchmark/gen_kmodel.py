@@ -71,6 +71,7 @@ def _make_module(name, target):
     compile_options.dump_import_op_range = True
     compile_options.use_mse_quant_w = True
     compile_options.benchmark_only = True
+    compile_options.split_w_scale = False
     compiler = nncase.Compiler(compile_options)
     import_options = nncase.ImportOptions()
     compiler.import_onnx(onnx_model, import_options)
