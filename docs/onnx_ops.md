@@ -104,6 +104,7 @@
 | ReverseSequence | ✅ |
 | RoiAlign | ✅ |
 | Round | ✅ |
+| Rsqrt | ✅ |
 | Selu | ✅ |
 | Shape | ✅ |
 | Sign | ✅ |
